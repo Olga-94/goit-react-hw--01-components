@@ -43,7 +43,7 @@ export const StatsItem = styled.li`
   justify-content: space-between;
   padding: ${p => p.theme.space[5]}px;
   :not(:last-child) {
-    border-right: ${p => p.theme.borders.normal};
+    border-right: ${p => p.theme.borders.bold};
     border-right-color: ${p => p.theme.colors.default};
   }
 `;

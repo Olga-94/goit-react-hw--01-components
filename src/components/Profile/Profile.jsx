@@ -45,6 +45,7 @@ import {
           justifyContent="space-between"
           width="100%"
           bg="backgroundThird"
+          borderRadius="normal"
           // borderTop="normal"
           // borderRight="normal"
           
