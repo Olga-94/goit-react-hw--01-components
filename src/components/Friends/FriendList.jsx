@@ -2,7 +2,7 @@ import { Box } from 'components/Box/Box';
 import { FriendListItem } from 'components/Friends/FriendListItem';
 import PropTypes from 'prop-types';
 
-export const FriendsList = ({ friends }) => {
+export const FriendList = ({ friends }) => {
   return (
     <Box 
     as="ul" 
@@ -21,6 +21,6 @@ export const FriendsList = ({ friends }) => {
   );
 };
 
-FriendsList.propTypes = {
+FriendList.propTypes = {
   friends: PropTypes.array.isRequired,
 };
