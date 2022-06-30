@@ -20,7 +20,7 @@ import {
         justifyContent="space-between"
         width="50%"
         my="40px"
-        pt="20px"
+        p="20px"
         bg="backgroundSecondary"
         borderRadius="normal"
         boxShadow="default"
