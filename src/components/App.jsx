@@ -1,16 +1,27 @@
+import user from 'data/user.json';
+import { Profile } from './Profile/Profile';
+import { Box } from './Box/Box';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="space-between"
+      width="100%"
+      bg="background"
     >
-      React homework template
-    </div>
+      <Profile
+        avatar={user.avatar}
+        location={user.location}
+        username={user.username}
+        tag={user.tag}
+        stats={user.stats}
+      />
+      {/* <Statistics stats={data} title="UPLOAD STATS" /> */}
+      {/* <FriendList friends={friends} /> */}
+      {/* <TransactionHistory items={transactions} /> */}
+    </Box>
   );
 };
