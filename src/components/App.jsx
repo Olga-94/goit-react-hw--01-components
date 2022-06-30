@@ -1,6 +1,8 @@
 import user from 'data/user.json';
+import data from 'data/data.json';
 import { Profile } from './Profile/Profile';
 import { Box } from './Box/Box';
+import { Statistics } from './Statistics/Statistics';
 
 export const App = () => {
   return (
@@ -19,7 +21,7 @@ export const App = () => {
         tag={user.tag}
         stats={user.stats}
       />
-      {/* <Statistics stats={data} title="UPLOAD STATS" /> */}
+      <Statistics stats={data} title="UPLOAD STATS" />
       {/* <FriendList friends={friends} /> */}
       {/* <TransactionHistory items={transactions} /> */}
     </Box>
